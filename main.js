@@ -72,9 +72,9 @@ const revealMessage = (pointsArray, time) => {
 console.log(findOptimalStartTime(inputArr, 10)); //10940;
 console.log(findOptimalStartTime(inputArr, 4)); //10944;
 // Run the function with values in this range until text is found
-console.log(revealMessage(inputArr, 10940)); // incorrect
-console.log(revealMessage(inputArr, 10944)); // incorrect
-console.log(revealMessage(inputArr, 10942)); // reveals message
-// Once optimal time (t) is discovered, use the lowest common factor which remains computable (a step of 2 exceeds callstack) and use this value to see results computationally
+console.log(revealMessage(inputArr, 10940)); // lower = incorrect
+console.log(revealMessage(inputArr, 10944)); // upper = incorrect
+console.log(revealMessage(inputArr, 10942)); // median = reveals message
+// Once optimal time (t) is discovered, use the lowest common factor which remains computable (a step of 2 exceeds callstack, so 5471) and use this value to see results computationally
 console.log(findOptimalStartTime(inputArr, 5471)); // 10942
 console.log(revealMessage(inputArr, findOptimalStartTime(inputArr, 5471)));
