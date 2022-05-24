@@ -60,7 +60,7 @@ const revealMessage = (pointsArray, time) => {
     }
     grid.push(row);
   }
-// Plot the coordinate points on the grid
+// Plot the coordinate points on the grid, use min value to adjust coordinates to range size
   adjustedPointsArray.forEach((point) => {
     grid[point.yPos - minY][point.xPos - minX] = '#';
   });
